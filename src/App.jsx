@@ -1,14 +1,12 @@
 import style from "./app.module.css";
+import ButtonsContainer from "./component/ButtonsContainer";
+import Display from "./component/Display";
 
 const App = () => {
   return (
     <div className={style.calculatorBorder}>
-      <input className={style.calculator} id="calculator" type="text" />
-      <div id="buttons">
-        <button>C</button>
-        <button>C</button>
-        <button>C</button>
-      </div>
+      <Display />
+      <ButtonsContainer />
     </div>
   );
 };
